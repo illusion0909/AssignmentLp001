@@ -12655,3 +12655,11 @@ p.required-field label::after {
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,.2);
 }
+.modelalert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}

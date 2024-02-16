@@ -81,7 +81,23 @@ $('.datepicker').on('changeDate', function (ev) {
     $(this).datepicker('hide');
 });
 function addItem() {
-   // debugger
+   
+    if ($('#Key').val().trim() == '') {
+        alert('Please enter a value for Key');
+        return;
+    }
+
+
+    if ($('#Value').val().trim() == '') {
+        alert('Please enter a value for Value');
+        return;
+    }
+
+    if ($('#Value2').val().trim() == '') {
+        alert('Please enter a value for Value2');
+        return;
+    }
+
     var currentDate = new Date();
 
     var year = currentDate.getFullYear();
@@ -151,6 +167,21 @@ function edit(url) {
     })
 }
 function UpdateItem() {
+    if ($('#Key').val().trim() == '') {
+        alert('Please enter a value for Key');
+        return;
+    }
+
+
+    if ($('#Value').val().trim() == '') {
+        alert('Please enter a value for Value');
+        return;
+    }
+
+    if ($('#Value2').val().trim() == '') {
+        alert('Please enter a value for Value2');
+        return;
+    }
     var currentDate = new Date();
 
     var year = currentDate.getFullYear();
